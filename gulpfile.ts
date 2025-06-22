@@ -3,7 +3,7 @@ const html = require("gulp-file-include");
 
 // CONTENT
 function compileContent() {
-  return src("dev/html/*.html")
+  return src("dev/content/*.html")
     .pipe(
       html({
         prefix: "@@",
@@ -12,7 +12,7 @@ function compileContent() {
     )
     .pipe(dest("dev"));
 }
-function watchContent() { watch(["dev/html/**/*.html", "dev/html/*.html"], compileContent); }
+function watchContent() { watch(["dev/content/**/*.html", "dev/content/*.html"], compileContent); }
 
   exports.default = parallel(
     compileContent,

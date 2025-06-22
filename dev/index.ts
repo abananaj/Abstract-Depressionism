@@ -1,7 +1,7 @@
 // ==================== TESTS
 console.log('hello from index.js');
 // module
-import { testModule } from "./scripts/ts/test-module.js";
+import { testModule } from "./scripts/ts/test-module.ts";
 console.log(testModule);
 // babel
 [1, 2, 3].map(n => n + 1);
