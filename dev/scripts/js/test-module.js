@@ -1,0 +1,1 @@
+export const testModule = 'hello from test-module.js';

@@ -1,0 +1,5 @@
+*.log
+*.lnk
+node_modules/
+prod/
+assets/
