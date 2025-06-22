@@ -1,13 +1,13 @@
 //  ========= TYPOGRAPHY
 @import "https://use.typekit.net/toy1dtd.css";
-@import "sass/typography";
+@import "styles/typography";
 
 $roc-grotesk: "roc-grotesk-variable", sans-serif;
 $mendl-serif: "mendl-serif-variable", serif;
 $mendl-sans: "mendl-sans-variable", sans-serif;
 
 // =========== COLORS
-// @import url("sass/colors.scss");
+// @import url("styles/colors.scss");
 $red-devil: #910F13;
 $haiti: #19113B;
 $golden-grass: #DBAC2A;
@@ -282,9 +282,9 @@ $utilities: map-merge($utilities, $modified-utilities);
 @import "/node_modules/bootstrap/scss/utilities/api";
 
 // 8. Add additional custom code here
-@import "sass/header";
-@import "sass/headings";
-// @import "sass/color-mode-toggle.scss";
+@import "styles/header";
+@import "styles/headings";
+// @import "styles/color-mode-toggle.scss";
 
 // IMPORT WHOLE BOOTSTRAP LIBRARY?
 // @import "/node_modules/bootstrap/scss/bootstrap";
