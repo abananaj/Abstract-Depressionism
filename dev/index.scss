@@ -8,20 +8,17 @@ $mendl-sans: "mendl-sans-variable", sans-serif;
 
 // =========== COLORS
 // @import url("styles/colors.scss");
-$red-devil: #910F13;
-$haiti: #19113B;
-$golden-grass: #DBAC2A;
-$bourbon: #BF7513;
-$deep-fir: #032603;
-$saltpan: #F5FCF5;
-$diesel: #170001;
-$partchment: #EBE1C5;
-$burnt-maroon: #42090B;
+/* Rainbow Funk : https://colordesigner.io/color-palette-builder#910f13-19113b-dbac2a-bf7513-032603-f5fcf5-170001-ebe1c5-42090b  */
 
-// body {
-//   background: $saltpan;
-//   color: $diesel;
-// }
+$diesel: #170001;
+$english-holly: #032603;
+$aubergine: #42090b;
+$haiti: #19113b;
+$tamarillo: #910f13;
+$meteor: #bf7513;
+$golden-grass: #dbac2a;
+$double-spanish-white: #ebe1c5;
+$ottoman: #f5fcf5;
 
 // BOOTSTRAP
 // 1. functions first
@@ -29,18 +26,35 @@ $burnt-maroon: #42090B;
 
 // 2. Include any default variable overrides here - redefine variables not dependent on anything else
 
-// global variables
+// global variables 
 $enable-rounded: false;
 $enable-button-pointers: true;
 $enable-negative-margins: true;
 $enable-smooth-scroll: true;
 
+
+$white: 	$ottoman;
+$black: 	$diesel;
+
+$blue:      #1b76ff;
+$indigo: 	$haiti;
+$purple:    #360259;
+$pink:      #FF5252;
+$red: 		$tamarillo;
+$orange: 	$meteor;
+$yellow: 	$golden-grass;
+$green: 	$english-holly;
+$teal:      #20c997;
+$cyan:      #17a2b8;
+$gray:      #96907f;
+$gray-dark: #32302b;
+
 // theme color variables
-$primary: $red-devil;
+$primary: $tamarillo;
 $secondary: $haiti;
-$light: $saltpan;
+$light: $double-spanish-white;
 $dark: $diesel;
-$success: $deep-fir;
+$success: $english-holly;
 $info: #2623c9;
 $warning: $golden-grass;
 $danger: #df141b;
