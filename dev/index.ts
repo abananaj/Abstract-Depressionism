@@ -17,4 +17,5 @@ import "bootstrap";
 // ==================== CUSTOM MODULES
 import './scripts/js/header.js';
 import './scripts/js/tiltgrid.js';
+import './scripts/js/homepg.js';
 // ==================== CUSTOM MODULES
