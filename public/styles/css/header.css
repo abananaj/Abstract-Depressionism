@@ -1,0 +1,502 @@
+/* =============== VARIABLES ============== */
+
+:root {
+    --toggle-width: 3rem;
+    --toggle-height: 3rem;
+    --extended-height: 8rem;
+    --border-width: .1rem;
+    --logo-p: .2rem;
+    --logo-out: all 300ms cubic-bezier(0.77, 0, 0.175, 1) 500ms;
+    --logo-in: all 600ms cubic-bezier(0.77, 0, 0.175, 1) 500ms;
+
+
+    --navitem: "roc-grotesk-variable", sans-serif;
+    --navitem-var: "wght" 300, "wdth" 70;
+    --navitem-var-hover: "wght" 600, "wdth" 250;
+    --nav-in: all 500ms ease-in 100ms;
+    --nav-out: all 500ms ease-out 100ms;
+    --navWrapper-out: all 500ms ease-in-out 1500ms;
+    --navWrapper-in: all 300ms ease-out 600ms;
+}
+
+header#page-header {
+    padding-top: var(--toggle-height);
+}
+header {
+    padding-top: 0; 
+    position: fixed;
+    top: 0;
+    left: 00;
+    width: 100%;
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: var(--border-width) solid var(--text);
+}
+
+#navWrapper.hidden {
+    box-sizing: border-box;
+    position: relative;
+    height: var(--toggle-height);
+    transition: var(--navWrapper-out);
+	padding: 0;
+}
+
+#navWrapper.extended {
+    height: var(--extended-height);
+    background-color: rgba(255, 255, 255, .75);
+    transition: var(--navWrapper-in);
+}
+
+/*navitems*/
+.navitem {
+    background-color: var(--navitem-color);
+    color: var(--text-light);
+}
+
+
+.navitem:hover {
+    background-color: var(--navitem-color-hover);
+    color: var(--text-light);
+}
+
+/* ===== LOGOTYPE ===== */
+#navLogo {
+    position: absolute;
+    bottom: 2%;
+    left: 2px;
+    width: 75%;
+    height: var(--toggle-height);
+    display: flex;
+    transition: var(--logo-out);
+}
+#navWrapper.extended #navLogo {
+	width: 100%;
+}
+.logotype .word {
+    display: flex;
+    padding: var(--logo-p);
+    flex-flow: row nowrap;
+}
+
+.letter {
+    height: 100%;
+    margin-top: calc(var(--logo-p) / 2);
+    margin-right: calc(var(--logo-p) / 2);
+    margin-bottom: calc(var(--logo-p) / 2);
+    margin-left: calc(var(--logo-p) / 2);
+}
+
+.a.letter,
+.o.letter {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.r.letter {
+    margin-right: 0;
+}
+
+.c.letter {
+    margin-left: calc(var(--logo-p));
+}
+
+/* HAMBURGER */
+.toggle {
+    width: calc(var(--toggle-width) * .75);
+    padding: 5px;
+    height: calc(var(--toggle-height) * .75);
+    position: fixed;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+	box-sizing: border-box;
+    z-index: 20;
+    transition: var(--logo-out);
+}
+
+.toggle.active {
+    width: var(--toggle-width);
+    height: var(--toggle-height);
+    position: fixed;
+    top: var(--extended-height);
+    right: 50%;
+    padding: 0;
+    cursor: pointer;
+    z-index: 20;
+    transition: var(--logo-out);
+}
+
+.menu-bar {
+    width:90%;
+    height: 4px;
+	padding: 0 2px;
+    background: var(--color4);
+    position: absolute;
+    transition: var(--logo-in);
+}
+
+.menu-bar1 {
+	top:15%;
+	right:15%;
+}
+
+.menu-bar2 {
+	top:55%;
+	right:15%;
+}
+
+.menu-bar3 {
+	top: 90%;
+	right:15%;
+}
+
+#navToggle {
+    margin: auto;
+}
+#navToggle.active {
+    top: calc();
+    right: 0;
+
+}
+
+#navToggle.active .menu-bar1 {
+    transform: rotate(45deg) scaleX(.9);
+    top: 50%;
+}
+
+#navToggle.active .menu-bar2 {
+    opacity: 0;
+}
+
+#navToggle.active .menu-bar3 {
+    transform: rotate(-45deg) scaleX(.9);
+    top: 50%;
+}
+
+.menu {
+    list-style: none;
+    width: 100%;
+    height: calc(var(--extended-height) - var(--toggle-height));
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+
+/* menuitems */
+.navitem {
+    flex: 1 2 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    cursor: pointer;
+    position: relative;
+    top: -100%;
+    border-right: var(--border-width) solid var(--text);
+    border-bottom: var(--border-width) solid var(--text);
+    transition: var(--nav-out);
+}
+
+.navitem a {
+    font-family: var(--navitem);
+    font-variation-settings: var(--navitem-var);
+    color: var(--text);
+    font-size: 1.618rem;
+    transition: var(--nav-out);
+    text-decoration: none;
+}
+
+.navitem:hover a {
+    font-family: var(--navitem);
+    font-variation-settings: var(--navitem-var-hover);
+    transition: var(--nav-in);
+}
+
+
+.navspacer {
+    flex: 0 0 var(--toggle-width);
+}
+
+@media screen and (max-width: 787px) {
+    .navitem {
+        min-width: 50%;
+    }
+}
+
+@media screen and (max-width: 641px) {
+    .navitem {
+        min-width: 100%;
+    }
+}
+
+/* HEADER ANIMATION */
+/*
+
+COLORS
+
+Blue: #0477BF
+Yellow: #F2B807
+White: #F2E6D0
+Orange: #F2911B
+Red: #BF2C2C
+
+Green: #032612
+
+*/
+
+
+
+/*TYPOGRAPHY
+ * hwt-mardell:
+ * mendl-sans-dawn:
+ * mendl-sans-dusk:
+ * roc-grotesk-compressed:
+
+ */
+
+/* ============================= HEADER LOGO ANIMATION ==================*/
+.header-animation {
+  width: 100%;
+}
+
+.header-logo-mobile {
+  display: none;
+}
+
+.header-logo {
+  display: block;
+}
+
+@media screen and (max-width:767px) {
+    .header-logo-mobile {
+        display: block;
+      }
+      
+      .header-logo {
+        display: none;
+      }
+}
+.header-letter {
+  animation: headerLetters 70s linear 0s alternate infinite both;
+}
+
+/*mobile*/
+
+  .a.header-letter {
+    animation-delay: 0s;
+  }
+
+  .b.header-letter {
+    animation-delay: 5s;
+  }
+
+  .s.header-letter {
+    animation-delay: 10s;
+  }
+
+  .t.header-letter {
+    animation-delay: 15s;
+  }
+
+  .r.header-letter {
+    animation-delay: 20s;
+  }
+
+  .a2.header-letter {
+    animation-delay: 25s;
+  }
+
+  .c.header-letter {
+    animation-delay: 30s;
+  }
+
+  .t2.header-letter {
+    animation-delay: 35s;
+  }
+
+  .d.header-letter {
+    animation-delay: 0s;
+  }
+
+  .e.header-letter {
+    animation-delay: 5s;
+  }
+
+  .p.header-letter {
+    animation-delay: 10s;
+  }
+
+  .r2.header-letter {
+    animation-delay: 15s;
+  }
+
+  .e2.header-letter {
+    animation-delay: 20s;
+  }
+
+  .s2.header-letter {
+    animation-delay: 25s;
+  }
+
+  .s3.header-letter {
+    animation-delay: 30s;
+  }
+
+  .i.header-letter {
+    animation-delay: 35s;
+  }
+
+  .o.header-letter {
+    animation-delay: 40s;
+  }
+
+  .n.header-letter {
+    animation-delay: 45s;
+  }
+
+  .i2.header-letter {
+    animation-delay: 50s;
+  }
+
+  .s4.header-letter {
+    animation-delay: 55s;
+  }
+
+  .m.header-letter {
+    animation-delay: 60s;
+  }
+
+
+/*desktop*/
+@media only screen and (min-width: 767px) {
+  .header-logo {
+    display: block;
+  }
+
+  .header-logo-mobile {
+    display: none;
+  }
+
+  .a.header-letter {
+    animation-delay: 0s;
+  }
+
+  .b.header-letter {
+    animation-delay: 3s;
+  }
+
+  .s.header-letter {
+    animation-delay: 6s;
+  }
+
+  .t.header-letter {
+    animation-delay: 9s;
+  }
+
+  .r.header-letter {
+    animation-delay: 12s;
+  }
+
+  .a2.header-letter {
+    animation-delay: 15s;
+  }
+
+  .c.header-letter {
+    animation-delay: 18s;
+  }
+
+  .t2.header-letter {
+    animation-delay: 21s;
+  }
+
+  .d.header-letter {
+    animation-delay: 24s;
+  }
+
+  .e.header-letter {
+    animation-delay: 27s;
+  }
+
+  .p.header-letter {
+    animation-delay: 30s;
+  }
+
+  .r2.header-letter {
+    animation-delay: 33s;
+  }
+
+  .e2.header-letter {
+    animation-delay: 36s;
+  }
+
+  .s2.header-letter {
+    animation-delay: 39s;
+  }
+
+  .s3.header-letter {
+    animation-delay: 42s;
+  }
+
+  .i.header-letter {
+    animation-delay: 45s;
+  }
+
+  .o.header-letter {
+    animation-delay: 48s;
+  }
+
+  .n.header-letter {
+    animation-delay: 51s;
+  }
+
+  .i2.header-letter {
+    animation-delay: 54s;
+  }
+
+  .s4.header-letter {
+    animation-delay: 57s;
+  }
+
+  .m.header-letter {
+    animation-delay: 60s;
+  }
+}
+
+
+@keyframes headerLetters {
+  0% {
+    fill: rgb(242, 184, 7, 0);
+    fill-opacity: .0;
+  }
+
+  20% {
+    fill: rgb(247, 255, 249, .1);
+    fill-opacity: .1;
+  }
+
+  40% {
+    fill: rgba(0, 112, 28, .1);
+    fill-opacity: .1;
+  }
+
+  60% {
+    fill: #be020f;
+    fill-opacity: .1;
+  }
+
+  80% {
+    fill: #2900cc;
+    fill-opacity: .1;
+  }
+
+  100% {
+    fill: transparent;
+    fill-opacity: .0;
+  }
+}
+
+
+/* OUTLINE LOGO END*/

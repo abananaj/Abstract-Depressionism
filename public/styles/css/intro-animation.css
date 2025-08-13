@@ -1,0 +1,515 @@
+/* ============================ INTRO ANIMATION start =============================== */
+body {
+  margin: 0;
+  padding: 0;
+}
+svg {
+  width: 100%;
+  height: auto;
+}
+
+.intro-logo-mobile {
+display: none;
+}
+
+
+.intro-logo {
+  width: 95vw;
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%,-50%);
+  animation: exit 3s ease-in-out 3s 1 normal both;
+  }
+
+
+@keyframes backgroundChange {
+  0% {
+    background-color: #002B09;
+  }
+
+  50% {
+    background-color: #1B0085;
+  }
+
+  100% {
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+/*logo switch */
+@media only screen and (max-width: 767px) {
+  .intro-logo {
+    display: none;
+  }
+
+  .intro-logo-mobile {
+    display: block;
+  }
+
+  .intro-logo-mobile {
+  width: 95vw;
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%,-50%);
+  animation: exit 3s ease-in-out 3s 1 normal both;
+  }
+
+  @keyframes exit {
+  0% {
+    width: 100vw;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%,-50%);
+  }
+
+  100% {
+    width: 60vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(0%,0%);
+  }
+
+  }
+
+  .intro-animation {
+  height: 100vh;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  background-color: black;
+  animation: backgroundChange 4s ease-in 2s 1 normal both;
+  }
+
+@keyframes backgroundChange {
+  0% {
+    background-color: #002B09;
+  }
+
+  90% {
+    background-color: #1B0085;
+  }
+
+  100% {
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+}
+
+svg {
+
+  margin: 0;
+}
+
+.intro-letter {
+  animation: introLetters 5s ease-out 1 both;
+}
+
+.intro-letter .intro-abstract {
+  animation: introAbstract 5s ease-out 1 both;
+}
+
+.intro-letter .intro-depressionism {
+  animation: introDepressionism 5s ease-out 1 both;
+}
+
+.a.intro-letter {
+  animation-delay: 0ms;
+}
+
+.b.intro-letter {
+  animation-delay: 100ms;
+}
+
+.s.intro-letter {
+  animation-delay: 200ms;
+}
+
+.t.intro-letter {
+  animation-delay: 300ms;
+}
+
+.r.intro-letter {
+  animation-delay: 400ms;
+}
+
+.a2.intro-letter {
+  animation-delay: 500ms;
+}
+
+.c.intro-letter {
+  animation-delay: 600ms;
+}
+
+.t2.intro-letter {
+  animation-delay: 700ms;
+}
+
+.d.intro-letter {
+  animation-delay: 800ms;
+}
+
+.e.intro-letter {
+  animation-delay: 900ms;
+}
+
+.p.intro-letter {
+  animation-delay: 1000ms;
+}
+
+.r2.intro-letter {
+  animation-delay: 1100ms;
+}
+
+.e2.intro-letter {
+  animation-delay: 1200ms;
+}
+
+.s2.intro-letter {
+  animation-delay: 1300ms;
+}
+
+.s3.intro-letter {
+  animation-delay: 1400ms;
+}
+
+.i.intro-letter {
+  animation-delay: 1500ms;
+}
+
+.o.intro-letter {
+  animation-delay: 1600ms;
+}
+
+.n.intro-letter {
+  animation-delay: 1700ms;
+}
+
+.i2.intro-letter {
+  animation-delay: 1800ms;
+}
+
+.s4.intro-letter {
+  animation-delay: 1900ms;
+}
+
+.m.intro-letter {
+  animation-delay: 2000ms;
+}
+
+
+@keyframes introLetters {
+  0% {
+    opacity: 0;
+    transform: translate(0, 50%);
+    fill: none; 
+  }
+
+  20% {
+    opacity: 1;
+    transform: translate(0, 0%);
+    fill: rgba(0, 0, 0, 0);
+  }
+
+  30% {
+    fill: #BE020F;
+  }
+
+  50% {
+    transform: scaleY(1);
+  }
+
+  60% {
+    transform: scaleY(1.5);
+  }
+
+  70% {
+    fill: #f2b807;
+    transform: scaleY(1);
+  }
+
+
+  100% {
+    fill: rgba(0, 0, 0, 0);
+
+  }
+}
+
+
+
+/* MOBILE ANIMATION */
+
+
+svg {
+
+  margin: 0;
+}
+
+.intro-letter  {
+  animation: introLetterMob 5s ease-out 1 both;
+}
+
+.a.intro-letter {
+  animation-delay: 0ms;
+}
+
+.b.intro-letter {
+  animation-delay: 100ms;
+}
+
+.s.intro-letter {
+  animation-delay: 200ms;
+}
+
+.t.intro-letter {
+  animation-delay: 300ms;
+}
+
+.r.intro-letter {
+  animation-delay: 400ms;
+}
+
+.a2.intro-letter {
+  animation-delay: 500ms;
+}
+
+.c.intro-letter {
+  animation-delay: 600ms;
+}
+
+.t2.intro-letter {
+  animation-delay: 700ms;
+}
+
+.d.intro-letter {
+  animation-delay: 800ms;
+}
+
+.e.intro-letter {
+  animation-delay: 900ms;
+}
+
+.p.intro-letter {
+  animation-delay: 1000ms;
+}
+
+.r2.intro-letter {
+  animation-delay: 1100ms;
+}
+
+.e2.intro-letter {
+  animation-delay: 1200ms;
+}
+
+.s2.intro-letter {
+  animation-delay: 1300ms;
+}
+
+.s3.intro-letter {
+  animation-delay: 1400ms;
+}
+
+.i.intro-letter {
+  animation-delay: 1500ms;
+}
+
+.o.intro-letter {
+  animation-delay: 1600ms;
+}
+
+.n.intro-letter {
+  animation-delay: 1700ms;
+}
+
+.i2.intro-letter {
+  animation-delay: 1800ms;
+}
+
+.s4.intro-letter {
+  animation-delay: 1900ms;
+}
+
+.m.intro-letter {
+  animation-delay: 2000ms;
+}
+
+
+
+/*Mobile*/
+@keyframes introLetterMob {
+  0% {
+    opacity: 0;
+    transform: translate(0, 50%);
+    fill: none; 
+  }
+
+  20% {
+    opacity: 1;
+    transform: translate(0, 0%);
+    fill: rgba(0, 0, 0, 0);
+  }
+
+  30% {
+    fill: #BE020F;
+  }
+
+  50% {
+    transform: scaleY(1);
+  }
+
+  60% {
+    transform: scaleY(1.2);
+  }
+
+  70% {
+    fill: #f2b807;
+    transform: scaleY(1);
+  }
+
+
+  100% {
+    fill: rgba(0, 0, 0, 0);
+
+  }
+}
+
+/* INTRO ANIMATION end */
+
+/* INTRO LOGO ANIMATION */
+#introLogo {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation-name: introbgChange;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+.intro .abstract,
+.intro .depressionism {
+    animation-name: flicker-in-1;
+    animation-duration: 100ms;
+    animation-iteration-count: 20;
+    animation-delay: 6s;
+    margin: 2rem 1rem;
+    padding: 0;
+    display: flex;
+}
+
+.intro .letter {
+    height: 120px;
+    margin-top: calc(var(--logo-p) / 2);
+    margin-right: calc(var(--logo-p) / 2);
+    margin-bottom: calc(var(--logo-p) / 2);
+    margin-left: calc(var(--logo-p) / 2);
+}
+
+.intro .letter .bg {
+    fill: var(--color2);
+}
+
+.intro .letter .text {
+    fill: var(--color1);
+}
+
+.intro .letter {
+    animation-name: introLetters;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+.intro .letter.a {
+    animation-delay: 0ms;
+}
+
+.intro .letter.b {
+    animation-delay: 100ms;
+}
+
+.intro .letter.s {
+    animation-delay: 200ms;
+}
+
+.intro .letter.t {
+    animation-delay: 300ms;
+}
+
+.intro .letter.r {
+    animation-delay: 400ms;
+}
+
+.intro .letter.a2 {
+    animation-delay: 500ms;
+}
+
+.intro .letter.c {
+    animation-delay: 600ms;
+}
+
+.intro .letter.t2 {
+    animation-delay: 700ms;
+}
+
+.intro .letter.d {
+    animation-delay: 800ms;
+}
+
+.intro .letter.e {
+    animation-delay: 900ms;
+}
+
+.intro .letter.p {
+    animation-delay: 1000ms;
+}
+
+.intro .letter.r2 {
+    animation-delay: 1100ms;
+}
+
+.intro .letter.e2 {
+    animation-delay: 1200ms;
+}
+
+.intro .letter.s2 {
+    animation-delay: 1300ms;
+}
+
+.intro .letter.s3 {
+    animation-delay: 1400ms;
+}
+
+.intro .letter.i {
+    animation-delay: 1500ms;
+}
+
+.intro .letter.o {
+    animation-delay: 1600ms;
+}
+
+.intro .letter.n {
+    animation-delay: 1700ms;
+}
+
+.intro .letter.i2 {
+    animation-delay: 1800ms;
+}
+
+.intro .letter.s4 {
+    animation-delay: 1900ms;
+}
+
+.intro .letter.m {
+    animation-delay: 2000ms;
+}

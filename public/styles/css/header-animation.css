@@ -1,0 +1,267 @@
+/*
+
+COLORS
+
+Blue: #0477BF
+Yellow: #F2B807
+White: #F2E6D0
+Orange: #F2911B
+Red: #BF2C2C
+
+Green: #032612
+
+*/
+
+
+
+/*TYPOGRAPHY
+ * hwt-mardell:
+ * mendl-sans-dawn:
+ * mendl-sans-dusk:
+ * roc-grotesk-compressed:
+
+ */
+
+/* ============================= HEADER LOGO ANIMATION ==================*/
+.header-animation {
+  width: 100%;
+}
+
+.header-logo-mobile {
+  display: none;
+}
+
+.header-logo {
+  display: block;
+}
+
+@media screen and (max-width:767px) {
+    .header-logo-mobile {
+        display: block;
+      }
+      
+      .header-logo {
+        display: none;
+      }
+}
+.header-letter {
+  animation: headerLetters 70s linear 0s alternate infinite both;
+}
+
+/*mobile*/
+
+  .a.header-letter {
+    animation-delay: 0s;
+  }
+
+  .b.header-letter {
+    animation-delay: 5s;
+  }
+
+  .s.header-letter {
+    animation-delay: 10s;
+  }
+
+  .t.header-letter {
+    animation-delay: 15s;
+  }
+
+  .r.header-letter {
+    animation-delay: 20s;
+  }
+
+  .a2.header-letter {
+    animation-delay: 25s;
+  }
+
+  .c.header-letter {
+    animation-delay: 30s;
+  }
+
+  .t2.header-letter {
+    animation-delay: 35s;
+  }
+
+  .d.header-letter {
+    animation-delay: 0s;
+  }
+
+  .e.header-letter {
+    animation-delay: 5s;
+  }
+
+  .p.header-letter {
+    animation-delay: 10s;
+  }
+
+  .r2.header-letter {
+    animation-delay: 15s;
+  }
+
+  .e2.header-letter {
+    animation-delay: 20s;
+  }
+
+  .s2.header-letter {
+    animation-delay: 25s;
+  }
+
+  .s3.header-letter {
+    animation-delay: 30s;
+  }
+
+  .i.header-letter {
+    animation-delay: 35s;
+  }
+
+  .o.header-letter {
+    animation-delay: 40s;
+  }
+
+  .n.header-letter {
+    animation-delay: 45s;
+  }
+
+  .i2.header-letter {
+    animation-delay: 50s;
+  }
+
+  .s4.header-letter {
+    animation-delay: 55s;
+  }
+
+  .m.header-letter {
+    animation-delay: 60s;
+  }
+
+
+/*desktop*/
+@media only screen and (min-width: 767px) {
+  .header-logo {
+    display: block;
+  }
+
+  .header-logo-mobile {
+    display: none;
+  }
+
+  .a.header-letter {
+    animation-delay: 0s;
+  }
+
+  .b.header-letter {
+    animation-delay: 3s;
+  }
+
+  .s.header-letter {
+    animation-delay: 6s;
+  }
+
+  .t.header-letter {
+    animation-delay: 9s;
+  }
+
+  .r.header-letter {
+    animation-delay: 12s;
+  }
+
+  .a2.header-letter {
+    animation-delay: 15s;
+  }
+
+  .c.header-letter {
+    animation-delay: 18s;
+  }
+
+  .t2.header-letter {
+    animation-delay: 21s;
+  }
+
+  .d.header-letter {
+    animation-delay: 24s;
+  }
+
+  .e.header-letter {
+    animation-delay: 27s;
+  }
+
+  .p.header-letter {
+    animation-delay: 30s;
+  }
+
+  .r2.header-letter {
+    animation-delay: 33s;
+  }
+
+  .e2.header-letter {
+    animation-delay: 36s;
+  }
+
+  .s2.header-letter {
+    animation-delay: 39s;
+  }
+
+  .s3.header-letter {
+    animation-delay: 42s;
+  }
+
+  .i.header-letter {
+    animation-delay: 45s;
+  }
+
+  .o.header-letter {
+    animation-delay: 48s;
+  }
+
+  .n.header-letter {
+    animation-delay: 51s;
+  }
+
+  .i2.header-letter {
+    animation-delay: 54s;
+  }
+
+  .s4.header-letter {
+    animation-delay: 57s;
+  }
+
+  .m.header-letter {
+    animation-delay: 60s;
+  }
+}
+
+
+@keyframes headerLetters {
+  0% {
+    fill: rgb(242, 184, 7, 0);
+    fill-opacity: .0;
+  }
+
+  20% {
+    fill: rgb(247, 255, 249, .1);
+    fill-opacity: .1;
+  }
+
+  40% {
+    fill: rgba(0, 112, 28, .1);
+    fill-opacity: .1;
+  }
+
+  60% {
+    fill: #be020f;
+    fill-opacity: .1;
+  }
+
+  80% {
+    fill: #2900cc;
+    fill-opacity: .1;
+  }
+
+  100% {
+    fill: transparent;
+    fill-opacity: .0;
+  }
+}
+
+
+/* OUTLINE LOGO END*/

@@ -1,0 +1,98 @@
+/* =============== VARIABLES ============== */
+:root {
+    --easeInSine: cubic-bezier(.47, 0, .745, .715);
+    --easeOutSine: cubic-bezier(.39, .575, .565, 1);
+    --easeInOutSine: cubic-bezier(.445, .05, .55, .95);
+}
+
+
+/* LOGOTYPE */
+.letter .bg {
+    fill: #BE2500;
+}
+
+.letter .text {
+    fill: #0E0033;
+}
+
+#navLogo .letter .text {
+    animation-name: textLogotype;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+}
+
+#navLogo .letter .bg {
+    animation-name: bgLogotype;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+}
+
+#logotypecolors {
+    height: 1200px;
+}
+
+.demo svg {
+    height: 120px;
+}
+
+.letter .bg {
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+/* COLORS */
+.greens .letter .bg {
+    animation-name: greens;
+    fill: var(--color1);
+}
+
+.reds .letter .bg {
+    animation-name: reds;
+    fill: var(--color2);
+}
+
+.yellows .letter .bg {
+    animation-name: yellows;
+    fill: var(--color3);
+}
+
+.blues .letter .bg {
+    animation-name: blues;
+    fill: var(--color4);
+}
+
+/* DELAY */
+._1st .bg {
+    animation-delay: 1s;
+    animation-duration: 9s;
+}
+
+._2nd .bg {
+    animation-delay: 2s;
+    animation-duration: 8s;
+}
+
+._3rd .bg {
+    animation-delay: 3s;
+    animation-duration: 7s;
+}
+
+._4th .bg {
+    animation-delay: 4s;
+    animation-duration: 6s;
+}
+
+._5th .bg {
+    animation-delay: 5s;
+    animation-duration: 5s;
+}
+
+._6th .bg {
+    animation-delay: 6s;
+    animation-duration: 4s;
+}
+
+._7th .bg {
+    animation-delay: 7s;
+    animation-duration: 3s;
+}

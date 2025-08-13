@@ -1,0 +1,300 @@
+// ================== load custom font from adobe fonts
+@import url("https://use.typekit.net/toy1dtd.css");
+// ===========  1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import url("/node_modules/bootstrap/scss/_functions.scss");
+
+//===========  2. Include any default variable overrides here
+// @import "sass/radix";
+// @import "sass/bs-var";
+
+// =========== GLOBAL VARIABLE
+$enable-rounded: enable;
+$enable-button-pointers: false;
+$enable-negative-margins: true;
+$enable-smooth-scroll: false;
+
+// // =========== THEME COLOR VARIABLES
+@import "color-palette";
+$primary: $hex1;
+$secondary: $hex2;
+$light: $saltpan;
+$dark: $diesel;
+$success: #032603;
+$info: #19113B;
+$warning: $golden-grass;
+$danger: #df141b;
+
+// =========== FONT FAMILY
+$hwt-mardell: "hwt-mardell",sans-serif;
+$roc-grotesk: "roc-grotesk-variable",sans-serif;
+$mendl-serif: "mendl-serif-variable", serif;
+$mendl-sans: "mendl-sans-variable",sans-serif;
+$gridlite-pe: "gridlite-pe-variable",sans-serif;
+
+
+$font-family-serif: $mendl-serif;
+$font-family-sans-serif: $mendl-sans;
+$font-family-base: $roc-grotesk;
+// $font-family-monospace: ;
+// $font-family-code: ;
+$headings-font-family:        $mendl-serif;
+
+$display-font-family:         $headings-font-family;
+$input-btn-font-family:       $roc-grotesk;
+$btn-font-family:             $input-btn-font-family !default;
+$input-font-family:           $input-btn-font-family !default;
+$form-select-font-family:     $input-font-family !default;
+
+// =========== FONT SIZES
+$font-size-base: 1rem;
+$lead-font-size: $font-size-base * 1.618;
+
+// =========== HEADINGS
+$headings-font-style:         null !default;
+$headings-font-weight:        500;
+$headings-line-height:        1.5;
+$headings-color:              inherit !default;
+
+$h1-font-size:                $font-size-base * 4.3;
+$h2-font-size:                $font-size-base * 3.26;
+$h3-font-size:                $font-size-base * 2.62;
+$h4-font-size:                $font-size-base * 1.618;
+$h5-font-size:                $font-size-base * 1.33;
+$h6-font-size:                $font-size-base * 1.1;
+
+// // =========== LINKS
+// $link-color: $secondary;
+// $link-decoration: none;
+// $link-hover-decoration: underline;
+// $link-shade-percentage: 30%;
+// $link-hover-color: shift-color($link-color, -$link-shade-percentage);
+
+// 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
+
+@import "/node_modules/bootstrap/scss/mixins";
+@import "/node_modules/bootstrap/scss/variables";
+@import "/node_modules/bootstrap/scss/variables-dark";
+
+// 4. Include any default map overrides here
+
+// breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 640px,
+  md: 787px,
+  lg: 1024px,
+  xl: 1360px,
+  xxl: 1600px,
+);
+
+// headings
+$heading-size: (
+  h1: 4.23rem,
+  h2: 2.62rem,
+  h3: 1.618rem,
+  h4: 1.33rem,
+  h5: 1.25rem,
+  h6: 1rem,
+);
+
+// spacers
+$spacer: 8px;
+$spacers: (
+  0: 0,
+  1: $spacer / 4,
+  2: $spacer / 2,
+  3: $spacer,
+  4: $spacer * 2,
+  5: $spacer * 4,
+);
+
+// borders
+// $border-width: 3px;
+$border-widths: (
+  1: 1px,
+  2: 3px,
+  3: 5px,
+  4: 7px,
+  5: 9px,
+);
+$border-color: $primary;
+
+// import variables and mixins files (so you can use them below)
+// any redefined vars above will be incorporated into the files (e.g. in maps)
+@import "/node_modules/bootstrap/scss/maps";
+// @import "/node_modules/bootstrap/scss/mixins";
+
+// anything that depends on variables/mixins file defined below
+.btn-truncate {
+  max-width: 100px;
+  @include text-truncate;
+}
+
+// add colors to theme
+$custom-colors: (
+  paprika: #990033,
+  black-rose: #660033,
+  athens-gray: #f0f2f5,
+  tiber: #003333,
+  blue-stone: #006664,
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+// // remove colors from theme
+// $theme-colors: map-remove($theme-colors, "danger");
+
+// add classes for color pallette colors
+@each $color, $val in $colors {
+  .bg-#{$color} {
+    background-color: $val;
+  }
+  .bg-#{$color}-light {
+    background-color: tint-color($val, 80%);
+  }
+  .bg-#{$color}-dark {
+    background-color: shade-color($val, 30%);
+  }
+  .text-#{$color} {
+    color: $val;
+  }
+  .text-#{$color}-light {
+    color: tint-color($val, 80%);
+  }
+  .text-#{$color}-dark {
+    color: shade-color($val, 30%);
+  }
+}
+
+// // add display heading
+// $custom-display-font-sizes: (
+//   7: 2rem,
+// );
+// $display-font-sizes: map-merge($custom-display-font-sizes, $display-font-sizes);
+
+// utility api - import utility file first
+@import "/node_modules/bootstrap/scss/utilities";
+
+// adding utilities
+$custom-utilities: (
+  // "var": (
+  //   property: font-variation-settings,
+  //   class: var,
+  //   values: (
+  //     compThin: $varCompThin,
+  //     condThin: $varCondThin,
+  //     narThin: $varNarThin,
+  //     regThin: $varRegThin,
+  //     wideThin: $varWideThin,
+  //     extThin: $varExtThin,
+  //     maxThin: $varMaxThin,
+  //     compLight: $varCompLight,
+  //     condLight: $varCondLight,
+  //     narLight: $varNarLight,
+  //     regLight: $varRegLight,
+  //     wideLight: $varWideLight,
+  //     extLight: $varExtLight,
+  //     maxLight: $varMaxLight,
+  //     compNorm: $varCompNorm,
+  //     condNorm: $varCondNorm,
+  //     narNorm: $varNarNorm,
+  //     regNorm: $varRegNorm,
+  //     wideNorm: $varWideNorm,
+  //     extNorm: $varExtNorm,
+  //     maxNorm: $varMaxNorm,
+  //     compMed: $varCompMed,
+  //     condMed: $varCondMed,
+  //     narMed: $varNarMed,
+  //     regMed: $varRegMed,
+  //     wideMed: $varWideMed,
+  //     extMed: $varExtMed,
+  //     maxMed: $varMaxMed,
+  //     compSemi: $varCompSemi,
+  //     condSemi: $varCondSemi,
+  //     narSemi: $varNarSemi,
+  //     regSemi: $varRegSemi,
+  //     wideSemi: $varWideSemi,
+  //     extSemi: $varExtSemi,
+  //     maxSemi: $varMaxSemi,
+  //     compBold: $varCompBold,
+  //     condBold: $varCondBold,
+  //     narBold: $varNarBold,
+  //     regBold: $varRegBold,
+  //     wideBold: $varWideBold,
+  //     extBold: $varExtBold,
+  //     maxBold: $varMaxBold,
+  //     compBlack: $varCompBlack,
+  //     condBlack: $varCondBlack,
+  //     narBlack: $varNarBlack,
+  //     regBlack: $varRegBlack,
+  //     wideBlack: $varWideBlack,
+  //     extBlack: $varExtBlack,
+  //     maxBlack: $varMaxBlack,
+  //     compSuper: $varCompSuper,
+  //     condSuper: $varCondSuper,
+  //     narSuper: $varNarSuper,
+  //     regSuper: $varRegSuper,
+  //     wideSuper: $varWideSuper,
+  //     extSuper: $varExtSuper,
+  //     maxSuper: $varMaxSuper,
+  //   ),
+  // ),
+  "varWght": (
+    property: font-weight,
+    class: varWght,
+    values: (
+      thin: 200,
+      light: 300,
+      reg: 400,
+      medium: 500,
+      semibold: 600,
+      bold: 700,
+      black: 800,
+      super: 900,
+    ),
+  ),
+  "varWdth": (
+    property: font-stretch,
+    class: varWdth,
+    values: (
+      comp: 50,
+      cond: 60,
+      narr: 80,
+      reg: 100,
+      wide: 150,
+      ext: 200,
+    ),
+  ),
+  "opacity": (
+    property: opacity,
+    class: o,
+    state: hover,
+    values: (
+      0: 0,
+      25: 0.25,
+      50: 0.5,
+      75: 0.75,
+      100: 1,
+    ),
+  ),
+);
+$utilities: map-merge($utilities, $custom-utilities);
+
+// // modifying utilities
+// $modified-utilities: (
+//   "border-bottom": (
+//     property: border-bottom,
+//     values: (
+//       null: $border-width dotted $border-color,
+//       0: 0,
+//     )
+//   ),
+//   "display": map-merge(
+//     map-get($utilities, "display"),
+//     ( class: dis ),
+//   ),
+// );
+// $utilities: map-merge($utilities, $modified-utilities);
+
+// import bootstrap whole sass lib (incorporates all above redefined vars & values)
+// @import "/node_modules/bootstrap/scss/bootstrap"; 

@@ -1,0 +1,698 @@
+/*
+
+COLORS
+
+Blue: #0477BF
+Yellow: #F2B807
+White: #F2E6D0
+Orange: #F2911B
+Red: #BF2C2C
+
+Green: #032612
+
+*/
+
+
+
+/*TYPOGRAPHY
+ * hwt-mardell:
+ * mendl-sans-dawn:
+ * mendl-sans-dusk:
+ * roc-grotesk-compressed:
+
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #007bff;
+  --secondary: #6610f2;
+  --accent: #6f42c1;
+  --highlight: #e83e8c;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --text-light: #f8f9fa;
+  --text-dark: #343a40;
+}
+
+
+html {
+  line-height: 1.3;
+}
+
+
+body {
+  font-family: "neighbor", sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+  width: 100vw;
+  height: 100vh;
+  line-height: 1.2;
+  overflow: auto;
+  margin: 0;
+}
+
+h1 {
+  font-family: "mendl-sans-variable", sans-serif;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin: 0;
+}
+
+h2 {
+  font-family: "mendl-sans-variable", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h3 {
+  font-family: "mendl-sans-variable", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0;
+  text-transform: uppercase;
+
+}
+
+h4 {
+  font-family: "mendl-sans-variable", sans-serif;
+  font-size: 1.4em;
+  font-weight: 600;
+  margin: 0;
+}
+
+h5 {
+  font-family: "mendl-sans-variable", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 200;
+  margin: 0;
+
+}
+
+h6 {
+  font-family: "roc-grotesk-condensed", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 200;
+  margin: 0;
+  text-transform: uppercase;
+
+}
+
+p {
+  font-family: "neighbor", sans-serif;
+  margin: 0;
+  line-height: 1.3;
+  padding: 10px 0;
+}
+
+img {
+  width: 100%;
+  box-shadow: 4px 3px 6px 1px rgb(0 0 0 / 50%);
+  border-radius: 5px;
+}
+
+a {
+  color: #001137;
+  font-family: "mendl-sans-variable", sans-serif;
+  text-decoration: none;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #2900c2;
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
+}
+
+a:active {
+  /* selected link */
+  color: #f2b807;
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
+}
+
+/* ============================ INTRO ANIMATION start =============================== */
+
+svg {
+  width: 100%;
+  height: auto;
+}
+
+.intro-logo {
+  display: none;
+}
+
+.intro-logo,
+.intro-logo-mobile {
+  width: 95vw;
+  position: absolute;
+  top: 33vh;
+  animation: exit 6s ease-in-out 6s 1 normal both;
+}
+
+@keyframes exit {
+  0% {
+    width: 95vw;
+    position: absolute;
+    top: 33vh;
+  }
+
+  100% {
+    width: 100%;
+    position: absolute;
+    top: 0;
+  }
+}
+
+.intro-animation {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 20px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: backgroundChange 6s ease-in 2s 1 normal both;
+}
+
+@keyframes backgroundChange {
+  0% {
+    background-color: #002B09;
+  }
+
+  80% {
+    background-color: #1B0085;
+  }
+
+  90% {
+    background-color: #000;
+  }
+
+  100% {
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+
+
+/*logo switch*/
+@media only screen and (min-width: 641px) {
+  .intro-logo {
+    display: block;
+  }
+
+  .intro-logo-mobile {
+    display: none;
+  }
+}
+
+svg {
+
+  margin: 0;
+}
+
+.intro-letter {
+  animation: introLetters 5s ease-out 1 both;
+}
+
+.a.intro-letter {
+  animation-delay: 0ms;
+}
+
+.b.intro-letter {
+  animation-delay: 100ms;
+}
+
+.s.intro-letter {
+  animation-delay: 200ms;
+}
+
+.t.intro-letter {
+  animation-delay: 300ms;
+}
+
+.r.intro-letter {
+  animation-delay: 400ms;
+}
+
+.a2.intro-letter {
+  animation-delay: 500ms;
+}
+
+.c.intro-letter {
+  animation-delay: 600ms;
+}
+
+.t2.intro-letter {
+  animation-delay: 700ms;
+}
+
+.d.intro-letter {
+  animation-delay: 800ms;
+}
+
+.e.intro-letter {
+  animation-delay: 900ms;
+}
+
+.p.intro-letter {
+  animation-delay: 1000ms;
+}
+
+.r2.intro-letter {
+  animation-delay: 1100ms;
+}
+
+.e2.intro-letter {
+  animation-delay: 1200ms;
+}
+
+.s2.intro-letter {
+  animation-delay: 1300ms;
+}
+
+.s3.intro-letter {
+  animation-delay: 1400ms;
+}
+
+.i.intro-letter {
+  animation-delay: 1500ms;
+}
+
+.o.intro-letter {
+  animation-delay: 1600ms;
+}
+
+.n.intro-letter {
+  animation-delay: 1700ms;
+}
+
+.i2.intro-letter {
+  animation-delay: 1800ms;
+}
+
+.s4.intro-letter {
+  animation-delay: 1900ms;
+}
+
+.m.intro-letter {
+  animation-delay: 2000ms;
+}
+
+
+@keyframes introLetters {
+  0% {
+    opacity: 0;
+    transform: translate(0, 50%);
+    fill: none;
+  }
+
+  20% {
+    opacity: 1;
+    transform: translate(0, 0%);
+    fill: rgba(0, 0, 0, 0);
+  }
+
+  30% {
+    fill: #BE020F;
+  }
+
+  50% {
+    transform: scaleY(1);
+  }
+
+  60% {
+    transform: scaleY(1.5);
+  }
+
+  70% {
+    fill: #f2b807;
+    transform: scaleY(1);
+  }
+
+
+  100% {
+    fill: rgba(0, 0, 0, 0);
+
+  }
+}
+
+
+/* INTRO ANIMATION end */
+
+/* ===============      button animations          ===========================  */
+.btn-primary {
+  display: inline-block;
+  font-family: "mendl-sans-variable";
+  color: #e8ffee;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  background-color: #002e0b;
+  border-left: 3px solid #002e0b;
+  border-bottom: 3px solid #002e0b;
+  border-radius: 2px 40px;
+  width: 200px;
+  margin: 20px;
+  padding: 20px 40px;
+  transition: all .6s ease-out;
+}
+
+.btn-primary:hover {
+  font-family: "mendl-sans-variable";
+  text-decoration: none;
+  color: #002e0b;
+  font-weight: 800;
+  letter-spacing: 3px;
+  background-color: #e8ffee;
+  box-shadow: inset 0px 0px 5px 8px white;
+  border-radius: 40px 2px;
+  border-right: none;
+  border-top: none;
+  margin: 20px;
+  transition: all .3s ease-in-out;
+}
+
+.btn-secondary {
+  display: inline-block;
+  font-family: "mendl-sans-variable";
+  background-color: #e8ffee;
+  color: #002e0b;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px;
+  border-left: 1px solid #e8ffee;
+  border-bottom: 1px solid #e8ffee;
+  margin: 20px;
+  transition: all .6s ease-in;
+  border-radius: 2px 30px;
+}
+
+.btn-secondary:hover {
+  font-family: "mendl-sans-variable";
+  color: #e8ffee;
+  text-decoration: none;
+  background-color: #be020f;
+  letter-spacing: 3px;
+  transition: all .3s ease-in-out;
+  border-radius: 30px 2px;
+  border-right: none;
+  border-top: none;
+  margin: 20px;
+
+}
+
+.btn-tertiary {
+  display: inline-block;
+  font-family: "roc-grotesk-variable";
+  background-color: transparent;
+  color: #002e0b;
+  font-weight: 200;
+  text-align: center;
+  text-decoration: none;
+  text-transform: lowercase;
+  border: 1.5px solid #002e0b;
+  margin: 20px;
+  transition: all .6s ease-in;
+  border-radius: 1px 10px;
+  letter-spacing: 3px;
+  width: 120px;
+}
+
+.btn-tertiary:hover {
+  color: #002e0b;
+  text-decoration: none;
+  transition: all .3s ease-in-out;
+  border-radius: 10px 1px;
+  margin: 20px;
+  text-transform: uppercase;
+}
+
+.btn-wide {
+  width: 250px;
+}
+
+/*button animations end*/
+
+/* ============================= HEADER LOGO ANIMATION ==================*/
+/* .header-logo-mobile.mobile-center {
+  display: ;
+} */
+svg {
+  margin: 0;
+}
+
+.header-logo,
+.header-logo-mobile {
+  position: relative;
+  padding: 20px;
+}
+
+.header-animation {
+  width: 100vw;
+  padding: 10px;
+}
+
+.header-logo {
+  display: none;
+}
+
+.header-logo-mobile {
+  display: block;
+  max-width: 200px;
+}
+
+.header-letter {
+  animation: headerLetters 70s linear 0s alternate infinite both;
+}
+
+/*mobile*/
+
+.a.header-letter {
+  animation-delay: 0s;
+}
+
+.b.header-letter {
+  animation-delay: 5s;
+}
+
+.s.header-letter {
+  animation-delay: 10s;
+}
+
+.t.header-letter {
+  animation-delay: 15s;
+}
+
+.r.header-letter {
+  animation-delay: 20s;
+}
+
+.a2.header-letter {
+  animation-delay: 25s;
+}
+
+.c.header-letter {
+  animation-delay: 30s;
+}
+
+.t2.header-letter {
+  animation-delay: 35s;
+}
+
+.d.header-letter {
+  animation-delay: 0s;
+}
+
+.e.header-letter {
+  animation-delay: 5s;
+}
+
+.p.header-letter {
+  animation-delay: 10s;
+}
+
+.r2.header-letter {
+  animation-delay: 15s;
+}
+
+.e2.header-letter {
+  animation-delay: 20s;
+}
+
+.s2.header-letter {
+  animation-delay: 25s;
+}
+
+.s3.header-letter {
+  animation-delay: 30s;
+}
+
+.i.header-letter {
+  animation-delay: 35s;
+}
+
+.o.header-letter {
+  animation-delay: 40s;
+}
+
+.n.header-letter {
+  animation-delay: 45s;
+}
+
+.i2.header-letter {
+  animation-delay: 50s;
+}
+
+.s4.header-letter {
+  animation-delay: 55s;
+}
+
+.m.header-letter {
+  animation-delay: 60s;
+}
+
+
+/*desktop*/
+@media only screen and (min-width: 641px) {
+  .header-logo {
+    display: block;
+  }
+
+  .header-logo-mobile {
+    display: none;
+  }
+
+  .a.header-letter {
+    animation-delay: 0s;
+  }
+
+  .b.header-letter {
+    animation-delay: 3s;
+  }
+
+  .s.header-letter {
+    animation-delay: 6s;
+  }
+
+  .t.header-letter {
+    animation-delay: 9s;
+  }
+
+  .r.header-letter {
+    animation-delay: 12s;
+  }
+
+  .a2.header-letter {
+    animation-delay: 15s;
+  }
+
+  .c.header-letter {
+    animation-delay: 18s;
+  }
+
+  .t2.header-letter {
+    animation-delay: 21s;
+  }
+
+  .d.header-letter {
+    animation-delay: 24s;
+  }
+
+  .e.header-letter {
+    animation-delay: 27s;
+  }
+
+  .p.header-letter {
+    animation-delay: 30s;
+  }
+
+  .r2.header-letter {
+    animation-delay: 33s;
+  }
+
+  .e2.header-letter {
+    animation-delay: 36s;
+  }
+
+  .s2.header-letter {
+    animation-delay: 39s;
+  }
+
+  .s3.header-letter {
+    animation-delay: 42s;
+  }
+
+  .i.header-letter {
+    animation-delay: 45s;
+  }
+
+  .o.header-letter {
+    animation-delay: 48s;
+  }
+
+  .n.header-letter {
+    animation-delay: 51s;
+  }
+
+  .i2.header-letter {
+    animation-delay: 54s;
+  }
+
+  .s4.header-letter {
+    animation-delay: 57s;
+  }
+
+  .m.header-letter {
+    animation-delay: 60s;
+  }
+}
+
+
+@keyframes headerLetters {
+  0% {
+    fill: rgb(242, 184, 7, 0);
+    fill-opacity: .0;
+  }
+
+  20% {
+    fill: rgb(247, 255, 249, .1);
+    fill-opacity: .1;
+  }
+
+  40% {
+    fill: rgba(0, 112, 28, .1);
+    fill-opacity: .1;
+  }
+
+  60% {
+    fill: #be020f;
+    fill-opacity: .1;
+  }
+
+  80% {
+    fill: #2900cc;
+    fill-opacity: .1;
+  }
+
+  100% {
+    fill: transparent;
+    fill-opacity: .0;
+  }
+}
+
+
+/* OUTLINE LOGO END*/

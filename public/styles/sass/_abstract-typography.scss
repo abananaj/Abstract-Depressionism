@@ -1,0 +1,127 @@
+@import url("https://use.typekit.net/toy1dtd.css");
+
+html,
+body {
+  font-size: calc(16px + 0.390625vw);
+  line-height: 1.3em;
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: var(--color1a);
+}
+
+:root {
+  --headings: "mendl-serif-variable", sans-serif;
+  --body1: "roc-grotesk-variable", sans-serif;
+  --body1-var: "wght" 100, "wdth" 50;
+  --body2: "roc-grotesk-variable", sans-serif;
+  --body2-var: "wght" 100, "wdth" 50;
+  --h1-size: 5.26rem;
+  --h2-size: 2.15rem;
+  --h3-size: 1.618rem;
+  --h4-size: 1.33rem;
+  --h5-size: 1.25rem;
+  --h6-size: 1rem;
+}
+/* ============================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--headings);
+  color: var(--text-light);
+}
+
+/* h1 - h3 */
+
+h1 {
+  font-variation-settings: var(--h1-var);
+  font-size: var(--h1-size);
+  font-variant: small-caps;
+  letter-spacing: 1px;
+  transition: 1000ms ease-in 100ms;
+}
+
+h1:hover {
+  font-variation-settings: var(--h1-var-hover);
+  transition: all 1000ms ease-out 100ms;
+}
+
+h2 {
+  font-variation-settings: var(--h2-var);
+  font-size: var(--h2-size);
+  transition: 1200ms ease-in 100ms;
+}
+
+h2:hover {
+  font-variation-settings: var(--h2-var-hover);
+  transition: 400ms ease-in 100ms;
+}
+
+h3 {
+  font-variation-settings: var(--h3-var);
+  font-size: var(--h3-size);
+}
+
+/* h4 - h6 */
+
+h4 {
+  font-variation-settings: var(--h4-var);
+  font-size: var(--h4-size);
+}
+
+h5 {
+  font-variation-settings: var(--h5-var);
+  font-size: var(--h5-size);
+}
+
+h6 {
+  font-variation-settings: var(--h6-var);
+  font-size: var(--h6-size);
+}
+
+/*display headings*/
+
+.display-1,
+.display-2,
+.display-3,
+.display-4 {
+  font-weight: var(--hdisplay-weight);
+}
+
+p,
+.body1,
+.body1 p {
+  font-family: var(--body1);
+  font-variation-settings: var(--body1);
+  font-size: 1rem;
+}
+
+.body2,
+.body2 p {
+  font-size: 1.618rem;
+  font-family: var(--body2);
+  font-variation-settings: var(--body2);
+  color: var(--text-light);
+}
+
+.caption,
+.caption p {
+  font-size: 1.25rem;
+  font-style: italic;
+  font-variant: small-caps;
+  font-weight: 400;
+  font-family: var(--body2);
+  color: var(--text-light);
+}
+
+.accent,
+.accent p {
+  font-weight: 500;
+  font-family: var(--body1);
+  color: var(--text-light);
+}

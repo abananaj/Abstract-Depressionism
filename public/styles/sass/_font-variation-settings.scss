@@ -1,0 +1,89 @@
+// FONT STRETCH
+$varComp: 50;
+$varCond: 60;
+$varNar: 80;
+$varReg: 100;
+$varWide: 120;
+$varExt: 150;
+$varMax: 200;
+// FONT WEIGHT
+$varThin: 200;
+$varLight: 300;
+$varNorm: 400;
+$varMed: 500;
+$varSemi: 600;
+$varBold: 700;
+$varBlack: 800;
+$varSuper: 900;
+
+$varCompThin: "wdth" $varComp, "wght" $varThin, "ital" 0;
+$varCondThin: "wdth" $varCond, "wght" $varThin, "ital" 0;
+$varNarThin: "wdth" $varNar, "wght" $varThin, "ital" 0;
+$varRegThin: "wdth" $varReg, "wght" $varThin, "ital" 0;
+$varWideThin: "wdth" $varWide, "wght" $varThin, "ital" 0;
+$varExtThin: "wdth" $varExt, "wght" $varThin, "ital" 0;
+$varMaxThin: "wdth" $varMax, "wght" $varThin, "ital" 0;
+
+$varCompLight: "wdth" $varComp, "wght" $varLight, "ital" 0;
+$varCondLight: "wdth" $varCond, "wght" $varLight, "ital" 0;
+$varNarLight: "wdth" $varNar, "wght" $varLight, "ital" 0;
+$varRegLight: "wdth" $varReg, "wght" $varLight, "ital" 0;
+$varWideLight: "wdth" $varWide, "wght" $varLight, "ital" 0;
+$varExtLight: "wdth" $varExt, "wght" $varLight, "ital" 0;
+$varMaxLight: "wdth" $varMax, "wght" $varLight, "ital" 0;
+
+$varCompNorm: "wdth" $varComp, "wght" $varNorm, "ital" 0;
+$varCondNorm: "wdth" $varCond, "wght" $varNorm, "ital" 0;
+$varNarNorm: "wdth" $varNar, "wght" $varNorm, "ital" 0;
+$varRegNorm: "wdth" $varReg, "wght" $varNorm, "ital" 0;
+$varWideNorm: "wdth" $varWide, "wght" $varNorm, "ital" 0;
+$varExtNorm: "wdth" $varExt, "wght" $varNorm, "ital" 0;
+$varMaxNorm: "wdth" $varMax, "wght" $varNorm, "ital" 0;
+
+$varCompMed: "wdth" $varComp, "wght" $varMed, "ital" 0;
+$varCondMed: "wdth" $varCond, "wght" $varMed, "ital" 0;
+$varNarMed: "wdth" $varNar, "wght" $varMed, "ital" 0;
+$varRegMed: "wdth" $varReg, "wght" $varMed, "ital" 0;
+$varWideMed: "wdth" $varWide, "wght" $varMed, "ital" 0;
+$varExtMed: "wdth" $varExt, "wght" $varMed, "ital" 0;
+$varMaxMed: "wdth" $varMax, "wght" $varMed, "ital" 0;
+
+$varCompSemi: "wdth" $varComp, "wght" $varSemi, "ital" 0;
+$varCondSemi: "wdth" $varCond, "wght" $varSemi, "ital" 0;
+$varNarSemi: "wdth" $varNar, "wght" $varSemi, "ital" 0;
+$varRegSemi: "wdth" $varReg, "wght" $varSemi, "ital" 0;
+$varWideSemi: "wdth" $varWide, "wght" $varSemi, "ital" 0;
+$varExtSemi: "wdth" $varExt, "wght" $varSemi, "ital" 0;
+$varMaxSemi: "wdth" $varMax, "wght" $varSemi, "ital" 0;
+
+$varCompSemi: "wdth" $varComp, "wght" $varSemi, "ital" 0;
+$varCondSemi: "wdth" $varCond, "wght" $varSemi, "ital" 0;
+$varNarSemi: "wdth" $varNar, "wght" $varSemi, "ital" 0;
+$varRegSemi: "wdth" $varReg, "wght" $varSemi, "ital" 0;
+$varWideSemi: "wdth" $varWide, "wght" $varSemi, "ital" 0;
+$varExtSemi: "wdth" $varExt, "wght" $varSemi, "ital" 0;
+$varMaxSemi: "wdth" $varMax, "wght" $varSemi, "ital" 0;
+
+$varCompBold: "wdth" $varComp, "wght" $varBold, "ital" 0;
+$varCondBold: "wdth" $varCond, "wght" $varBold, "ital" 0;
+$varNarBold: "wdth" $varNar, "wght" $varBold, "ital" 0;
+$varRegBold: "wdth" $varReg, "wght" $varBold, "ital" 0;
+$varWideBold: "wdth" $varWide, "wght" $varBold, "ital" 0;
+$varExtBold: "wdth" $varExt, "wght" $varBold, "ital" 0;
+$varMaxBold: "wdth" $varMax, "wght" $varBold, "ital" 0;
+
+$varCompBlack: "wdth" $varComp, "wght" $varBlack, "ital" 0;
+$varCondBlack: "wdth" $varCond, "wght" $varBlack, "ital" 0;
+$varNarBlack: "wdth" $varNar, "wght" $varBlack, "ital" 0;
+$varRegBlack: "wdth" $varReg, "wght" $varBlack, "ital" 0;
+$varWideBlack: "wdth" $varWide, "wght" $varBlack, "ital" 0;
+$varExtBlack: "wdth" $varExt, "wght" $varBlack, "ital" 0;
+$varMaxBlack: "wdth" $varMax, "wght" $varBlack, "ital" 0;
+
+$varCompSuper: "wdth" $varComp, "wght" $varSuper, "ital" 0;
+$varCondSuper: "wdth" $varCond, "wght" $varSuper, "ital" 0;
+$varNarSuper: "wdth" $varNar, "wght" $varSuper, "ital" 0;
+$varRegSuper: "wdth" $varReg, "wght" $varSuper, "ital" 0;
+$varWideSuper: "wdth" $varWide, "wght" $varSuper, "ital" 0;
+$varExtSuper: "wdth" $varExt, "wght" $varSuper, "ital" 0;
+$varMaxSuper: "wdth" $varMax, "wght" $varSuper, "ital" 0;

@@ -1,0 +1,28 @@
+/* MOBILE */
+@media only screen and (max-width: 640px) {
+  /* mobile styles */
+}
+
+@media only screen and (max-width: 787px) and (min-width: 641px) {
+  /* mobile xl styles */
+}
+
+/* TABLET */
+@media only screen and (max-width: 1024px) and (min-width: 788px) {
+  /* tablet styles */
+}
+
+/* LAPTOP */
+@media only screen and (max-width: 1366px) and (min-width: 1025px) {
+  /* laptop styles */
+}
+
+/* DESKTOP */
+@media only screen and (max-width: 1920px) and (min-width: 1367px) {
+  /* desktop styles */
+}
+
+/* WIDESCREEN */
+@media only screen and (min-width: 1920px) {
+  /* desktop styles */
+}

@@ -1,0 +1,87 @@
+/* BLOCKQUOTES */
+:root {
+    --easeInQuart: cubic-bezier(.895, .03, .685, .22);
+    --easeOutQuart: cubic-bezier(.165, .84, .44, 1);
+    --easeInQuart: cubic-bezier(.77, 0, .175, 1);
+}
+
+.quotes {
+    margin: calc(var(--gap) * 3) 0;
+    padding: 0 calc(var(--gap) * 2);
+    gap: var(--gap);
+    border-top: var(--border);
+    border-bottom: var(--border);
+}
+
+
+.quote-box {
+    background-color: rgba(255, 255, 255, .3);
+    border-right: var(--border);
+    border-left: var(--border);
+    border-color:#000;
+    position: relative;
+    padding: var(--gap);
+    flex: 1 1 33%;
+    transition: all 800ms var(--easeInQuart) 100ms;
+}
+
+.quote-box:hover {
+    flex: 0 2 50%;
+    background-color: rgba(255, 255, 255, .7);
+    transition: all 800ms ease-in 100ms;
+    transition: all 800ms var(--easeInQuart) 100ms;
+}
+
+.quote-box blockquote {
+    padding: 1.5rem 0 1rem 0;
+}
+
+
+.quote-box blockquote footer {
+    text-align: right;
+    font-family: var(--body1);
+    opacity: 0;
+    transition: all 800ms var(--easeInQuart) 100ms;
+}
+
+.quote-box:hover blockquote footer {
+    opacity: 1;
+    transition: all 800ms var(--easeInQuart) 100ms;
+}
+
+.quote-box .top,
+.quote-box blockquote::before {
+    content: "before";
+    opacity: 0;
+    width: 1.33rem;
+    position: absolute;
+    top: 5px;
+    left: 9px;
+    transform: translate(0, 100%); 
+    transition: all 800ms var(--easeInQuart) 100ms;
+}
+
+.quote-box .bottom,
+.quote-box blockquote::after {
+    content: "after";
+    opacity: 0;
+    width: 1.33rem;
+    position: absolute;
+    bottom: 5px;
+    right: 9px;
+    transform: translate(0, -100%);
+    transition: all 800ms var(--easeInQuart) 100ms;
+}
+
+.quote-box:hover .top,
+.quote-box:hover .bottom,
+.quote-box:hover blockquote::before,
+.quote-box:hover blockquote::after {
+    width: 1.33rem;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    opacity: .5;
+    transform: translate(0, 0);
+    transition: all 800ms var(--easeInQuart) 100ms;
+}
