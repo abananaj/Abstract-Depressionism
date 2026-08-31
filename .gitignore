@@ -8,7 +8,6 @@ wp-content/plugins/
 !wp-content/plugins/index.php
 
 wp-content/posts*
-uploads/
 wp-content/cache/
 wp-content/upgrade*
 
@@ -36,3 +35,4 @@ wp-content/season-bkp
 desktop.ini
 **/desktop.ini
 !.build/sql/import/*.sql
+wp-content/plugins/accessibility-checker/accessibility-checker.php

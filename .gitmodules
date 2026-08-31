@@ -1,0 +1,12 @@
+[submodule "wp-content/plugins/theatrum-blocks"]
+	path = wp-content/plugins/theatrum-blocks
+	url = https://github.com/abananaj/theatrum-blocks.git
+[submodule "wp-content/plugins/theatrum-animation"]
+	path = wp-content/plugins/theatrum-animation
+	url = https://github.com/abananaj/theatrum-animation.git
+[submodule "wp-content/plugins/theatrum-admin"]
+	path = wp-content/plugins/theatrum-admin
+	url = https://github.com/abananaj/theatrum-admin.git
+[submodule "wp-content/themes/wprig-radix"]
+	path = wp-content/themes/wprig-radix
+	url = https://github.com/abananaj/theatrum-radix.git
